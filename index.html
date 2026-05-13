@@ -1168,6 +1168,7 @@
     </style>
 <base target="_blank">
 <base target="_blank">
+<base target="_blank">
 </head>
 <body>
 
@@ -1766,30 +1767,6 @@
                     aboutTypeObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.3 });
-
-        if (aboutSection) {
-            aboutTypeObserver.observe(aboutSection);
-        }
-
-        // Navbar Mobile Menu
-        const navbarLinks = document.getElementById('navbarLinks');
-        const navbarMenuBtn = document.getElementById('navbarMenuBtn');
-
-        navbarMenuBtn.addEventListener('click', () => {
-            navbarLinks.classList.toggle('open');
-        });
-
-        document.querySelectorAll('.navbar-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navbarLinks.classList.remove('open');
-            });
-        });
-
-        // Active section highlighting removed
-    </script>
-</body>
-</html>});
         }, { threshold: 0.3 });
 
         if (aboutSection) {
